@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Audio App</title>
+  </head>
+  <body class="bg-slate-100">
+    <main class="max-w-2xl m-auto flex flex-col gap-3 px-1 pb-24">
+      <header class="p-4 items-center flex justify-between">
+        <h1 class="font-bold text-xl">Music</h1>
+        <img
+          class="w-12 h-12 rounded-full object-cover"
+          src="https://images.unsplash.com/flagged/photo-1570612861542-284f4c12e75f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+        />
+      </header>
+      <section class="flex justify-between px-4">
+        <!--Pill options-->
+        <div class="px-3 py-2 rounded-full bg-cyan-500 text-white">Overview</div>
+        <div class="px-3 py-2 rounded-full text-slate-400">Album</div>
+        <div class="px-3 py-2 rounded-full text-slate-400">Track</div>
+        <div class="px-3 py-2 rounded-full text-slate-400">Follow</div>
+      </section>
+      <section
+        class="rounded-lg m-auto mx-4 my-6 pt-4 pl-4 h-48 flex flex-col justify-between 
+        bg-cover bg-center bg-no-repeat bg-[url('https://images.unsplash.com/photo-1590421554129-19a2dff37230?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80')]"
+      >
+        <!--Hero section-->
+        <p class="bg-white text-cyan-500 w-fit p-1 px-2 rounded-full">Trending #1</p>
+        <h3 class="text-white font-bold text-2xl leading-8 w-[80%] mb-3">
+          Listen Best Hitz World Playlist
+        </h3>
+      </section>
+      <div class="flex items-center justify-between px-4">
+        <h3 class="font-bold text-2xl">Trending this week</h3>
+        <p class="text-slate-400">All</p>
+      </div>
+      <section class="px-4 grid grid-cols-3 gap-6 my-2">
+        <div
+          class="hover:bg-slate-200 p-1 ease-in duration-200 rounded-lg hover:cursor-pointer"
+        >
+          <img
+            class="max-w-full rounded-lg"
+            src="https://images.unsplash.com/photo-1504600770771-fb03a6961d33?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1782&q=80"
+            alt="Album art"
+          />
+          <div class="mt-2">
+            <h5 class="font-bold text-lg">Photograph</h5>
+            <p class="text-sm text-slate-400">Ed Sheran</p>
+          </div>
+        </div>
+
+        <div
+          class="hover:bg-slate-200 p-1 ease-in duration-200 rounded-lg hover:cursor-pointer"
+        >
+          <img
+            class="max-w-full rounded-lg"
+            src="https://images.unsplash.com/photo-1597589827317-4c6d6e0a90bd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=580&q=80"
+            alt="Album art"
+          />
+          <div class="mt-2">
+            <h5 class="font-bold text-lg">Blue Night</h5>
+            <p class="text-sm text-slate-400">Another singer</p>
+          </div>
+        </div>
+
+        <div
+          class="hover:bg-slate-200 p-1 ease-in duration-200 rounded-lg hover:cursor-pointer"
+        >
+          <img
+            class="max-w-full rounded-lg"
+            src="https://images.unsplash.com/photo-1600354587397-681c16c184bf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1780&q=80"
+            alt="Album art"
+          />
+          <div class="mt-2">
+            <h5 class="font-bold text-lg">Happier</h5>
+            <p class="text-sm text-slate-400">Marshmellow</p>
+          </div>
+        </div>
+      </section>
+
+      <div class="flex justify-between px-4 items-center my-2">
+        <h3 class="font-bold text-2xl">New albums</h3>
+        <p class="text-slate-400">All</p>
+      </div>
+
+      <section class="grid grid-cols-2 px-4 gap-3">
+        <div class="relative">
+          <img
+            class="max-w-full rounded-lg"
+            src="https://plus.unsplash.com/premium_photo-1682595142263-80143c15f68f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+            alt="Album art"
+          />
+          <p
+            class="absolute top-3 left-3 bg-white text-cyan-500 w-fit p-1 px-2 rounded-full"
+          >
+            Pop
+          </p>
+        </div>
+        <div class="relative">
+          <img
+            class="max-w-full rounded-lg"
+            src="https://images.unsplash.com/photo-1593697820910-a2b68670c1e1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80"
+            alt="Album art"
+          />
+          <p
+            class="absolute top-3 left-3 bg-white text-cyan-500 w-fit p-1 px-2 rounded-full"
+          >
+            Rock
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <footer
+      class=" drop-shadow-md bg-white flex justify-around px-4 py-8 fixed left-0 right-0 bottom-0 w-full max-w-2xl m-auto rounded-t-[66px]"
+    >
+      <!--icons-->
+      <i class="fa-solid fa-house"></i>
+      <i class="fa-solid fa-magnifying-glass"></i>
+      <i class="fa-regular fa-heart"></i>
+      <i class="fa-regular fa-user"></i>
+    </footer>
+  </body>
+</html>
